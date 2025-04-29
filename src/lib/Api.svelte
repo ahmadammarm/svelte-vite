@@ -2,7 +2,7 @@
     import { Button } from "./components/ui/button";
 
 
-    const apiUrl = "https://valorant-api.com/v1/agents";
+    const apiUrl: string = "https://valorant-api.com/v1/agents";
 
     const fetchData = async () => {
         try {

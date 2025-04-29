@@ -4,6 +4,7 @@
   import viteLogo from '/vite.svg';
   import Counter from './lib/Counter.svelte';
   import Api from '$lib/Api.svelte';
+  import Nyoba from '$lib/Nyoba.svelte';
 </script>
 
 <main>
@@ -20,6 +21,7 @@
   <div class="card">
     <Counter />
     <Api />
+    <Nyoba />
   </div>
 
   <p>
