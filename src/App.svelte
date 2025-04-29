@@ -5,6 +5,7 @@
   import Counter from './lib/Counter.svelte';
   import Api from '$lib/Api.svelte';
   import Nyoba from '$lib/Nyoba.svelte';
+  import State from '$lib/State.svelte';
 </script>
 
 <main>
@@ -22,6 +23,7 @@
     <Counter />
     <Api />
     <Nyoba />
+    <State />
   </div>
 
   <p>
