@@ -34,7 +34,7 @@
       <div class="bg-white shadow-md rounded-lg p-4">
         <h2 class="text-xl font-bold">{item.displayName}</h2>
         <img
-            loading="lazy"
+          loading="lazy"
           src={item.fullPortrait}
           alt={item.displayName}
           class="w-full h-auto rounded-lg" />
