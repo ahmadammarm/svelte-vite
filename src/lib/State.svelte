@@ -66,8 +66,9 @@
       hasilWarna = 'text-green-500';
     } else if (warna == 'biru' || warna == 'blue') {
       hasilWarna = 'text-blue-500';
-    } else {
+    } else if (warna == 'hitam' || warna == 'black') {
       hasilWarna = 'text-black';
+    } else {
       alert('Warna tidak valid');
     }
   }
