@@ -22,12 +22,45 @@
   function hitung() {
     return state++;
   }
+
+  let warnaFont = $state('text-black');
+
+  function gantiWarnaMerah() {
+    warnaFont = 'text-red-500';
+  }
+
+  function gantiWarnaHijau() {
+    warnaFont = 'text-green-500';
+  }
+
+  function gantiWarnaBiru() {
+    warnaFont = 'text-blue-500';
+  }
 </script>
 
 <p id="hitung">Jumlah : 0</p>
 
 <button onclick={increment}> hitung </button> <br />
-
 <button onclick={hitung}>
   {state}
 </button>
+
+<!-- button merah -->
+<button
+  class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+  onclick={gantiWarnaMerah}>Merah</button>
+
+<!-- button hijau -->
+<button
+  class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+  onclick={gantiWarnaHijau}>Hijau</button>
+
+<!-- button biru -->
+<button
+  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+  onclick={gantiWarnaBiru}>Biru</button>
+
+<p class={warnaFont}>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+  voluptatibus.
+</p>
