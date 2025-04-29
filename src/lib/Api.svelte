@@ -31,7 +31,7 @@
 {#if data.length > 0}
   <div class="grid grid-cols-3 gap-4">
     {#each data as item}
-      <div class="bg-white shadow-md rounded-lg p-4">
+      <div class="bg-white shadow-md rounded-lg p-4 hover:shadow-lg transition-shadow duration-300">
         <h2 class="text-xl font-bold">{item.displayName}</h2>
         <img
           loading="lazy"
