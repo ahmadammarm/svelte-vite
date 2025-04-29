@@ -1,7 +1,7 @@
 <script lang="ts">
   // dalam svelte terdapat istilah rune yang digunakan sebagai pengontrol svelte compiler
   // rune memiliki simbol awalan -> $
-  // contoh penggunaan rune (state) -> $state(parameter)
+  // contoh penggunaan rune (reactive state) -> $state(parameter)
   // sekilas dari yang terlihat seperti sebuah function atau method
 
   // reactive state adalah salah satu dari implementasi rune
@@ -9,7 +9,6 @@
   // perbedaan dengan state biasa adalah state biasa tidak dapat merender ulang tampilan ketika state tersebut berubah
 
   // contoh implementasi tanpa menggunakan reactive state
-
   let hitungs: number = 0;
 
   function increment() {
@@ -17,6 +16,7 @@
     document.getElementById('hitung').innerText = 'Jumlah : ' + hitungs;
   }
 
+  //   contoh implementasi dengan menggunakan reactive state
   let state: number = $state(0);
 
   function hitung() {
