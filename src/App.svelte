@@ -6,6 +6,7 @@
   import Api from '$lib/Api.svelte';
   import Nyoba from '$lib/Nyoba.svelte';
   import State from '$lib/State.svelte';
+  import Form from '$lib/Form.svelte';
 </script>
 
 <main>
@@ -24,6 +25,7 @@
     <Api />
     <Nyoba />
     <State />
+    <Form />
   </div>
 
   <p>
