@@ -1,23 +1,27 @@
 <script lang="ts">
-    let inputanWarna: string = $state('');
-    let hasilWarna: string = $state('')
+  import { Toaster, toast } from 'svelte-sonner'
 
-    const gantiWarna = () => {
-        inputanWarna = document.getElementById('inputanWarna').value;
+  let inputanWarna: string = $state('');
+  let hasilWarna: string = $state('');
 
-        if(inputanWarna == "merah" || inputanWarna == "red") {
-            hasilWarna = "text-red-500";
-        } else if(inputanWarna == "hijau" || inputanWarna == "green") {
-            hasilWarna = "text-green-500";
-        } else if(inputanWarna == "biru" || inputanWarna == "blue") {
-            hasilWarna = "text-blue-500";
-        } else if(inputanWarna == "hitam" || inputanWarna == "black") {
-            hasilWarna = "text-black";
-        } else {
-            alert("Warna tidak valid");
-        }
+  const gantiWarna = () => {
+    inputanWarna = document.getElementById('inputanWarna').value;
+
+    if (inputanWarna == 'merah' || inputanWarna == 'red') {
+      hasilWarna = 'text-red-500';
+    } else if (inputanWarna == 'hijau' || inputanWarna == 'green') {
+      hasilWarna = 'text-green-500';
+    } else if (inputanWarna == 'biru' || inputanWarna == 'blue') {
+      hasilWarna = 'text-blue-500';
+    } else if (inputanWarna == 'hitam' || inputanWarna == 'black') {
+      hasilWarna = 'text-black';
+    } else {
+      toast.error('warna tidak valid');
     }
+  };
 </script>
+
+<Toaster />
 
 <input type="text" id="inputanWarna" placeholder="Masukkan warna" />
 <button onclick={gantiWarna}>Ganti Warna</button>
