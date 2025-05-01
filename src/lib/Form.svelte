@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Toaster, toast } from 'svelte-sonner'
+  import {Toaster, toast} from 'svelte-sonner';
 
   let inputanWarna: string = $state('');
   let hasilWarna: string = $state('');

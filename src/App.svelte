@@ -7,6 +7,7 @@
   import Nyoba from '$lib/Nyoba.svelte';
   import State from '$lib/State.svelte';
   import Form from '$lib/Form.svelte';
+  import Derived from '$lib/Derived.svelte';
 </script>
 
 <main>
@@ -26,6 +27,7 @@
     <Nyoba />
     <State />
     <Form />
+    <Derived />
   </div>
 
   <p>
