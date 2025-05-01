@@ -13,6 +13,12 @@
   function increment() {
     array.push(Math.floor(Math.random() * 10));
   }
+
+  // dalam svelte juga terdapat derived.by state
+  // yang digunakan untuk mengekspresikan dalam bentuk function untuk parameternya
+
+  
+
 </script>
 
 <button
